@@ -29,7 +29,6 @@ def api_detail_scholarship(request,slug):
 
     serializer = ScholarshipSerializer(sch)
     context = {
-        "count" : qs.count(),
         "results" : serializer.data
     }
     return Response(context)
