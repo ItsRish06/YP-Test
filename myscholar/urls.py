@@ -19,10 +19,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework.schemas import get_schema_view
 from rest_framework.documentation import include_docs_urls 
+from rest_framework_swagger.views import get_swagger_view
 
 API_TITLE = "Scholarship API"
 API_DESCRIPTION = "APIs for fetching scholarship data."
-schema_view = get_schema_view(title=API_TITLE)
+schema_view = get_swagger_view(title=API_TITLE)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

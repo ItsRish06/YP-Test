@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'scholarships',
     'django_summernote',
     'django_filters',
+    'rest_framework_swagger',
 ]
 
 MIDDLEWARE = [
